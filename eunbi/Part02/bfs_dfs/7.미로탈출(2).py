@@ -29,4 +29,4 @@ for row in range(n):
 queue = deque()
 queue.append([0,0,1])
 visited = []
-bfs(map, queue, visited)
+bfs(map, queue, visited) 
