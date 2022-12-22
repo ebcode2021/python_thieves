@@ -1,8 +1,8 @@
 # DFS 메서드 정의
-def dfs(graph, v, visited) :
-	visited[v] = True
-	print(v, end= ' ')
-	for i in graph[v] :
+def dfs(graph, start, visited) :
+	visited[start] = True
+	print(start, end=' ')
+	for i in graph[start] :
 		if not visited[i] :
 			dfs(graph, i, visited)
 
@@ -19,6 +19,6 @@ graph = [
 	[1, 7]
 ]
 
-visited = [False] * 9
+visited = [False] * 8
 
 dfs(graph, 1, visited)
